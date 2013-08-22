@@ -1,4 +1,4 @@
-django-quick-start project
+django-quick-start-project
 ==================
 
 This is a Django project template to help you get up and running quick.
@@ -18,7 +18,7 @@ This setup sequence has been tested on Ubuntu 12.04. If you'd like, you can set 
 
 Start your new project by running the following command (replace site_name with the name of your new website):
 
-    django-admin startproject --template=https://github.com/joshvillbrandt/django-quick-start/project/zipball/master site_name
+    django-admin startproject --template=https://github.com/joshvillbrandt/django-quick-start-project/archive/master.zip site_name
 
 Start the development server:
 
@@ -28,10 +28,13 @@ Start the development server:
 
 # Get to work
 
-Now that you have a simple Django project installed, you probably want to create some models. The models.py file includes the basic poll model as described in the Django tutorials. 
+Unlike a normal Django project, this project template registers itself as an app in your project's settings. This means you can store models and views inside of the project_name folder. But you probably shouldn't go crazy with models here... The rational behind this is to provide the site shell in the project_name folder. However, large features of your website still deserve their own app as Django intends. This method continues to promote app reusability without the need to create another application just to hold your site's shell.
 
-# Development via repo
+So what do get when you run the server? You get a bootstrap base.html template and a home.html page. Your next step should be to setup an app (see django-quick-start-app.) Your app templates can then extend the base.html template just as the home page does.
 
-    django-admin.py startproject --template=/home/jvillbrandt/django-quick-start/django-quick-start testproject
+# Setup via git clone
+
+    git clone https://github.com/joshvillbrandt/django-quick-start-project.git
+    django-admin.py startproject --template=/home/jvillbrandt/django-quick-start/django-quick-start-project testproject
     cd testproject
     rs
