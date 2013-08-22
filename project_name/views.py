@@ -5,5 +5,7 @@ from django.shortcuts import render
 # https://docs.djangoproject.com/en/{{ docs_version }}/intro/tutorial03/
 
 def home(request):
-    context = {}
+    context = {
+        'active_nav': 'home',
+    }
     return render(request, 'home.html', context)

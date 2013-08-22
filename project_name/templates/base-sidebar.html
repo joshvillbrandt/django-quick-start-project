@@ -1,0 +1,26 @@
+{% templatetag openblock %} extends "base.html" {% templatetag closeblock %}
+
+{% templatetag openblock %} block content {% templatetag closeblock %}
+<div class="row base-sidebar">
+    <div class="col-md-3 sidebar">
+        
+<!-- START SIDEBAR -->
+{% templatetag openblock %} block sidebar_content {% templatetag closeblock %}
+Sidebar content goes here...
+{% templatetag openblock %} endblock sidebar_content {% templatetag closeblock %}
+<!-- END SIDEBAR -->
+
+    </div>
+
+    <div class="col-md-9">
+    
+<!-- START MAIN CONTENT -->
+{% templatetag openblock %} block main_content {% templatetag closeblock %}
+Main content goes here...
+{% templatetag openblock %} endblock main_content {% templatetag closeblock %}
+<!-- END MAIN CONTENT -->
+
+    </div>
+</div>
+
+{% templatetag openblock %} endblock content {% templatetag closeblock %}

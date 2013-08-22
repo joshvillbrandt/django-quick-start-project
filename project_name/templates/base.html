@@ -40,9 +40,9 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/app_name/">App 1</a></li>
-                            <li><a href="#">App 2</a></li>
+                            <li{% templatetag openblock %} if active_nav == "home" {% templatetag closeblock %} class="active"{% templatetag openblock %} endif {% templatetag closeblock %}><a href="/">Home</a></li>
+                            <li{% templatetag openblock %} if active_nav == "app_name" {% templatetag closeblock %} class="active"{% templatetag openblock %} endif {% templatetag closeblock %}><a href="/app_name/">app_name</a></li>
+                            <li{% templatetag openblock %} if active_nav == "app_name2" {% templatetag closeblock %} class="active"{% templatetag openblock %} endif {% templatetag closeblock %}><a href="/app_name2/">app_name2</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -62,11 +62,17 @@
 
             <!-- Begin page content -->
             <div class="container">
+{% templatetag openblock %} block pre_content {% templatetag closeblock %}
+{% templatetag openblock %} endblock pre_content {% templatetag closeblock %}
+
 <!-- START CONTENT -->
 {% templatetag openblock %} block content {% templatetag closeblock %}
 Page content goes here...
 {% templatetag openblock %} endblock content {% templatetag closeblock %}
 <!-- END CONTENT -->
+
+{% templatetag openblock %} block post_content {% templatetag closeblock %}
+{% templatetag openblock %} endblock post_content {% templatetag closeblock %}
             </div>
         </div>
 

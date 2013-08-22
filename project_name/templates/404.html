@@ -1,0 +1,13 @@
+{% templatetag openblock %} extends "base.html" {% templatetag closeblock %}
+
+{% templatetag openblock %} block title {% templatetag closeblock %}Not Found{% templatetag openblock %} endblock title {% templatetag closeblock %}
+
+{% templatetag openblock %} block content {% templatetag closeblock %}
+<div class="page-header">
+    <h1>Page not found</h1>
+</div>
+
+<p class="lead">We're sorry but that page could not be found.</p>
+
+<p>Please forgive us?</p>
+{% templatetag openblock %} endblock content {% templatetag closeblock %}
