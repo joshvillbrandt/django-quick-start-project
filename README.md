@@ -20,14 +20,16 @@ Start your new project by running the command below. Be sure to replace site_nam
 
     django-admin startproject --template=https://github.com/joshvillbrandt/django-quick-start-project/archive/master.zip --extension=py,html site_name
 
-Start the development server:
+# Get to work
+
+So what do you really get with this Django project? You primarily get a bootstrap base.html template and a home.html template. There are also a lot of other minor details already filled out for you. You can see all of this in action by starting the development server like so:
 
     cd site_name
     python manage.py syncdb
     python manage.py runserver 0.0.0.0:8080
 
-# Get to work
+Your next step should be to setup an app (see [django-quick-start-app](http://github.com/joshvillbrandt/django-quick-start-app).) Your app templates can then extend the base.html template just as the home page does.
+
+# Behing the scenes
 
 Unlike a normal Django project, this project template registers itself as an app in your project's settings. This means you can store models and views inside of the project_name folder. But you probably shouldn't go crazy with models here... The rational behind this is to provide the site shell in the project_name folder. However, large features of your website still deserve their own app as Django intends. This method continues to promote app reusability without the need to create another application just to hold your site's shell.
-
-So what do get when you run the server? You get a bootstrap base.html template and a home.html page. Your next step should be to setup an app (see django-quick-start-app.) Your app templates can then extend the base.html template just as the home page does.
