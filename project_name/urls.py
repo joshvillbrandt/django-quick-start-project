@@ -4,7 +4,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', '{{ project_name }}.views.home', name='home'),
+    url(r'^$', '{{ project_name }}.views.home'),
     
     # Include an application:
     # url(r'^app_name/', include('app_name.urls')),
