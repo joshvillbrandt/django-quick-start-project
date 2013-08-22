@@ -11,12 +11,12 @@ It includes jquery and bootstrap, but does not depend on any other Django apps. 
 This setup sequence has been tested on Ubuntu 12.04. If you'd like, you can set up a virtual environment. Otherwise, skip those steps.
 
     sudo apt-get install python-pip
-    pip install virtualenv
-    virtualenv djangoenv
-    source djangoenv/bin/activate
+    #pip install virtualenv
+    #virtualenv djangoenv
+    #source djangoenv/bin/activate
     pip install Django==1.5
 
-Start your new project by running the following command (replace site_name with the name of your new website):
+Start your new project by running the command below. Be sure to replace site_name with the name of your new website. Also, if you set this up in a virtual environment, you will need to add .py to the end of django-admin.
 
     django-admin startproject --template=https://github.com/joshvillbrandt/django-quick-start-project/archive/master.zip site_name
 
