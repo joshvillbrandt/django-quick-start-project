@@ -3,7 +3,7 @@ django-quick-start-project
 
 This is a Django project template to help you get up and running quick.
 
-The django-quick-start project builds on Django 1.5, jQuery 1.10, and Bootstrap 3.0. Unlike other Django templates like Pinax, django-quick-start is much more lightweight. A key design goal here was to have all of the templates that build the set present within the project (in contrast to Pinax.) This makes it easier to understand how your entire page is built and makes changing things easier.
+The django-quick-start project builds on [Django](https://www.djangoproject.com/) 1.5, [jQuery](http://jquery.com/) 1.10, and [Bootstrap](http://getbootstrap.com/) 3.0. Unlike other Django templates like [Pinax](http://pinaxproject.com/), django-quick-start is much more lightweight. A key design goal here was to have all of the templates that build the set present within the project (in contrast to Pinax.) This makes it easier to understand how your entire page is built and makes changing things easier.
 It includes jquery and bootstrap, but does not depend on any other Django apps. This means all of the code that makes your site is contained in your project directory (unlike pinax where even the core code is hidden across multiple apps.)
 
 # Setup
