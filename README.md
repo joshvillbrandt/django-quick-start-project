@@ -40,7 +40,7 @@ Unlike a normal Django project, this project template registers itself as an app
 
 # Extra 
 
-I find it helpful to add the fulling aliases to my ~/.bashrc file. They are extra helpful when testing multiple Django instances simultaneously!
+I find it helpful to add the following aliases to my ~/.bashrc file. They are extra helpful when testing multiple Django instances simultaneously!
 
     alias rs1='python manage.py runserver 0.0.0.0:8001'
     alias rs2='python manage.py runserver 0.0.0.0:8002'
